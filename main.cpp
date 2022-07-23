@@ -2,8 +2,9 @@
 #include <fstream>  
 #include <string>
 #include <filesystem>
-#pragma comment(lib, "winmm.lib")
 #include <Windows.h>
+
+#pragma comment(lib, "winmm.lib")
 
 int main()
 {
@@ -38,6 +39,14 @@ int main()
     {
         SetConsoleTextAttribute(hConsole, red);
         std::cout << "Path not found. (Could you have entered it incorrectly?)\n";
+        SetConsoleTextAttribute(hConsole, default_gray);
+        system("pause");
+        std::cin;
+    }
+    else if (!std::filesystem::exists(path + "\\WinRAR.exe"))
+    {
+        SetConsoleTextAttribute(hConsole, red);
+        std::cout << "WinRAR.exe not found in specified path. (Could you have entered the wrong one?)\n";
         SetConsoleTextAttribute(hConsole, default_gray);
         system("pause");
         std::cin;

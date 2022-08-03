@@ -16,7 +16,7 @@
 # PLEASE NOTE!:
 <p align="center">
     This program is not intended to PIRATE WinRAR, it is merely a temporary solution to get rid of the evaluation copy notice.
-    I recommend actually purchasing WinRAR to support the devs.
+    I recommend actually purchasing WinRAR to support the developers of the software.
     <br />
   </p>
 </div>
